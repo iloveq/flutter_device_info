@@ -2,7 +2,7 @@ import Foundation
 import KeychainAccess
 
 private var _service:String {
-    return bundleId
+    return Bundle.main.bundleIdentifier ?? ""
 }
 public extension Keychain {
     
