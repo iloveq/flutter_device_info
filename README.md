@@ -31,3 +31,12 @@ dependencies:
       platformVersion = 'Failed to get platform version.';
     }
 ```
+
+##### 3 what info :
+
+```
+// android
+{"svd":"google","sdkInt":29,"release":"10","isPhysicalDevice":false,"brand":"google","device":"generic_x86","board":"goldfish_x86","androidId":"e08c1c6a3dae1ffd"}
+// iOS
+{"localizedModel":"iPhone","systemName":"iOS","model":"iPhone","identifierForVendor":"01A665D8-ED33-4BA3-862D-489A6CC73115","idfa":"01A665D8-ED33-4BA3-862D-489A6CC73115","svd":"iPhone 12 Pro Max","name":"iPhone 12 Pro Max","systemVersion":"14.4"}
+```
