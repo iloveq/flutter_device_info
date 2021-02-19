@@ -13,13 +13,14 @@ dependencies:
   flutter:
     sdk: flutter
 
+#  flutter_device_info:
+#    path: ../
+
+  # use github source
   flutter_device_info:
-    # When depending on this package from a real application you should use:
-    #   flutter_device_info: ^x.y.z
-    # See https://dart.dev/tools/pub/dependencies#version-constraints
-    # The example app is bundled with the plugin so we use a path dependency on
-    # the parent directory to use the current plugin's version.
-    path: ../
+    git:
+      url: git://github.com/iloveq/flutter_device_info.git
+      ref: main
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
