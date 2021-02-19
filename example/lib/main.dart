@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_device_info/flutter_device_info.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -27,7 +28,14 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await FlutterDeviceInfo.getDeviceInfoJsonStr();
+      // android
+      AndroidDeviceInfo info = await FlutterDeviceInfo.getAndroidDeviceInfo();
+      platformVersion =  info.toString();
+      // iOS
+      //  IOSDeviceInfo info = await FlutterDeviceInfo.getIOSDeviceInfo();
+      //  platformVersion =  info.toString();
+      // JsonStr
+      // platformVersion = await FlutterDeviceInfo.getDeviceInfoJsonStr();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
